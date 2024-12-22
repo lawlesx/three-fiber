@@ -22,7 +22,7 @@ module.exports = {
   ignorePatterns: ["!**/.server", "!**/.client"],
 
   // Base config
-  extends: ["eslint:recommended", "eslint-config-prettier"],
+  extends: ["eslint:recommended"],
 
   overrides: [
     // React
