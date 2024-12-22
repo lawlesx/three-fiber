@@ -1,17 +1,10 @@
 import type { MetaFunction } from '@remix-run/node'
-import { useEffect, useState } from 'react'
 
 export const meta: MetaFunction = () => {
   return [{ title: 'New Remix App' }, { name: 'description', content: 'Welcome to Remix!' }]
 }
 
 export default function Index() {
-  const [theme, setTheme] = useState('light')
-
-  useEffect(() => {
-    console.log('Theme:', theme)
-  }, [])
-
   return (
     <div className='flex h-screen items-center justify-center'>
       <div className='flex flex-col items-center gap-16'>
